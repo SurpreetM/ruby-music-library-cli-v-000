@@ -87,6 +87,9 @@ class MusicLibraryController
 
     if (1..list_songs.length).include?(input)
       song = list_songs[input-1]
+    end 
+
+    puts "Playing #{song.name} by #{song.artist.name}"
   end
 
 end
