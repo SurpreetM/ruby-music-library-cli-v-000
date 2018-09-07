@@ -66,5 +66,17 @@ class Song
     end
   end
 
+  def new_from_filename(filename)
+    artist, song = filename.split(" - ")
+    new_song = self.new(song)
+    new_song.artist_name = artist
+    new_song
+  end 
+
+  def create_from_filename(filename)
+    new_from_filename(filename)
+    save
+  end 
+
 
 end
