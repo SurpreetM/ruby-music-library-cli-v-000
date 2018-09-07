@@ -61,7 +61,7 @@ class MusicLibraryController
     artist_song_list = Artist.find_by_name(input)
 
     artist_song_list_sorted = artist_song_list.sort do |a,b|
-      a.name <=> b.name
+      a.song <=> b.song
     end
 
     artist_song_list_sorted.each.with_index(1) do |song, i|
