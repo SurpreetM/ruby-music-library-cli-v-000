@@ -25,7 +25,7 @@ class MusicLibraryController
       elsif input == "list artists"
           list_artists
         elsif input == "list genres"
-          list_genres
+          list_genres 
       end
     end
   end
