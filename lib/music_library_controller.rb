@@ -22,7 +22,7 @@ class MusicLibraryController
 
       if input == "list songs"
         list_songs
-        if input == "list artists"
+      elsif input == "list artists"
           list_artists
           if input == "list genres"
             list_genres
@@ -37,7 +37,7 @@ class MusicLibraryController
             end
           end
         end
-        
+
       end
 
     end
