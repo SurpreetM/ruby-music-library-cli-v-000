@@ -22,8 +22,24 @@ class MusicLibraryController
 
       if input == "list songs"
         list_songs
+        if input == "list artists"
+          list_artists
+          if input == "list genres"
+            list_genres
+            if input == "list songs by artist"
+              list_songs_by_artist
+              if input == "list songs by genre"
+                list_songs_by_genre
+                if input == "play song"
+                  play_song
+                end
+              end
+            end
+          end
+        end
+        
       end
-      
+
     end
 
   end
