@@ -80,6 +80,11 @@ class MusicLibraryController
     end
   end
 
+  def play_song
+    input = gets.strip
+    
+  end 
+
 
 
 end
