@@ -29,7 +29,7 @@ class MusicLibraryController
       a.name <=> b.name
     end
 
-    songs_list_sorted.each.with.index(1) do |song, i|
+    songs_list_sorted.each.with_index(1) do |song, i|
       #puts artist - song title - genre
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
