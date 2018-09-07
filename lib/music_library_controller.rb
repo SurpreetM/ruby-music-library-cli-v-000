@@ -52,7 +52,7 @@ class MusicLibraryController
     genre_list_sorted.each.with_index(1) do |genre, i|
       puts "#{i}. #{genre.name}"
     end
-  end 
+  end
 
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
@@ -66,8 +66,8 @@ class MusicLibraryController
 
     artist_song_list_sorted.each.with_index(1) do |song, i|
       puts "#{i} - #{song.name} - #{song.genre.name}"
-    end 
-    
+    end
+
   end 
 
 
