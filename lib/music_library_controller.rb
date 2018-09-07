@@ -24,7 +24,7 @@ class MusicLibraryController
   end
 
   def list_songs
-    
+
     songs_list_sorted = Song.all.sort do |a,b|
       a.name <=> b.name
     end
@@ -33,7 +33,7 @@ class MusicLibraryController
       #puts artist - song title - genre
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
-    
+
   end
 
 
