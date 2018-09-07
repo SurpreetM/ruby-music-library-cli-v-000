@@ -86,10 +86,10 @@ class MusicLibraryController
     input = gets.strip.to_i
 
     if (1..Song.all.length).include?(input)
-      Song.all.sort do |a,b|
+      songs_list_sorted = Song.all.sort do |a,b|
         a.name <=> b.name
       end
-      song = list_songs[input-1]
+      song = song_list_sorted[input-1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
      
