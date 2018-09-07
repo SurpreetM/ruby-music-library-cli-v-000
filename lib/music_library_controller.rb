@@ -24,11 +24,11 @@ class MusicLibraryController
   end
 
   def list_songs
-    songs_list_alphabetical = Song.all.sort do |a,b|
+    songs_list_sorted = Song.all.sort do |a,b|
       a.name <=> b.name
-    end 
+    end
 
-    Song.all each.with.index(1) do |song, i|
+    songs_list_sorted.each.with.index(1) do |song, i|
       #puts artist - song title - genre
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
