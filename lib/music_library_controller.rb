@@ -82,7 +82,7 @@ class MusicLibraryController
 
   def play_song
     input = gets.strip
-    
+
   end 
 
 
