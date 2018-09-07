@@ -11,6 +11,7 @@ module Concerns::Findable
       create(name)
     else
       find_by_name(name)
+    end
   end
 
 end
