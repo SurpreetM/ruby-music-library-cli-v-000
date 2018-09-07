@@ -21,9 +21,14 @@ class MusicLibraryController
       input = gets.strip
     end 
 
-
-
   end
+
+  def list_songs
+    Song.all each do |song|
+      #puts artist - song title - genre
+      puts "#{song.artist.name} - #{song.name} - #{song.genre.name}"
+    end 
+  end 
 
 
 
