@@ -58,7 +58,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.strip
 
-    artist_song_list = Artist.find_by_name(input).song
+    artist_song_list = Artist.find_by_name(input)
 
     artist_song_list_sorted = artist_song_list.sort do |a,b|
       a.name <=> b.name
